@@ -8,9 +8,13 @@
   <div [ngClass]="{centered: isCentered}" class="panel">
     <div *ngIf="gameState.secondGame === true" id="leftPanel">
       <h2>Left Panel</h2>
-      <p>Fixie tilde subway tile affogato drinking vinegar. Occupy skateboard keytar stumptown. Enamel pin tattooed godard austin literally banjo. Next level plaid meditation godard slow-carb. Ethical hashtag tote bag whatever man braid cronut. Sustainable craft beer hammock deep v edison bulb ennui knausgaard fashion axe kitsch offal before they sold out freegan actually meggings. Messenger bag intelligentsia tumeric subway tile seitan typewriter taiyaki actually bicycle rights etsy ramps selvage hashtag man braid pabst. Butcher cred trust fund prism whatever plaid cronut, tumeric cold-pressed. Vexillologist leggings pour-over, shabby chic XOXO mustache shoreditch art party cornhole flexitarian chambray tacos green juice humblebrag edison bulb. XOXO master cleanse meditation, tattooed you probably haven't heard of them distillery pok pok celiac viral stumptown dreamcatcher wolf sustainable wayfarers plaid.</p>
+      <!--Build second game chamber here-->
+      <!--<swarm-chamber [gameState="gameState"></swarm-chamber>-->
     </div>
     <div id="centerPanel">
+      <!--Move back to gas chamber component once sharing is figured out-->
+      <!--<gas-chamber [gameState="gameState"></swarm-chamber>-->
+
       <div><label>Gas Level</label> {{gameState.gasLevel.toFixed(3)}}%</div>
 
       <div><label>Gas Level Increasing By</label> {{gameState.increasedBy.toFixed(3)}}% per second</div>
@@ -30,7 +34,7 @@
     </div>
     <div *ngIf="gameState.thirdGame" id="rightPanel">
       <h2>Right Panel</h2>
-      <p>Fixie tilde subway tile affogato drinking vinegar. Occupy skateboard keytar stumptown. Enamel pin tattooed godard austin literally banjo. Next level plaid meditation godard slow-carb. Ethical hashtag tote bag whatever man braid cronut. Sustainable craft beer hammock deep v edison bulb ennui knausgaard fashion axe kitsch offal before they sold out freegan actually meggings. Messenger bag intelligentsia tumeric subway tile seitan typewriter taiyaki actually bicycle rights etsy ramps selvage hashtag man braid pabst. Butcher cred trust fund prism whatever plaid cronut, tumeric cold-pressed. Vexillologist leggings pour-over, shabby chic XOXO mustache shoreditch art party cornhole flexitarian chambray tacos green juice humblebrag edison bulb. XOXO master cleanse meditation, tattooed you probably haven't heard of them distillery pok pok celiac viral stumptown dreamcatcher wolf sustainable wayfarers plaid.</p>
+      <!--<battle-chamber [gameState="gameState"></battle-chamber>-->
     </div>
   </div>
 </div>
